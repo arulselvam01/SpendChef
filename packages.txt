@@ -1,0 +1,4 @@
+# packages.txt - System dependencies for Streamlit Cloud
+tesseract-ocr
+tesseract-ocr-eng
+libtesseract-dev
