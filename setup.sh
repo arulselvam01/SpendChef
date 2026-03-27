@@ -1,11 +1,15 @@
 #!/bin/bash
 # setup.sh - Installation script for Streamlit Cloud
 
-# Install system dependencies
-apt-get update
-apt-get install -y tesseract-ocr tesseract-ocr-eng
+echo "Setting up SpendChef..."
 
-# Install Python dependencies
-pip install -r requirements.txt
+# Update package list
+apt-get update
+
+# Install Tesseract OCR
+apt-get install -y tesseract-ocr tesseract-ocr-eng libtesseract-dev
+
+# Verify installation
+tesseract --version
 
 echo "Setup completed successfully!"
